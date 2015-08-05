@@ -157,40 +157,32 @@ Map {
     polygon-opacity: .4
     }
 	
-	[zoom>=16] {
+	[zoom=16] {
     polygon-fill: darken(@building, 20%);
 	line-width: .2;
 	line-color: @building-outline;
 	polygon-opacity: .6;
 	}
   
-    [zoom>=17] {
+    [zoom=17] {
     polygon-fill: darken(@building, 30%);
     line-width: .3;
     line-color: @building-outline;
     polygon-opacity: 1;
     }
 
-	[zoom>=18] {
-      polygon-fill: darken(@building, 40%);
-     // polygon-fill: darken(@building, 30%);
-      building-height: 1.25;
-    /*
-		::wall {
-			polygon-fill:mix(@building, #ccc, 65);
-		}
-    
-		::roof {
-			polygon-fill: darken(@building, 40%);
-	  		polygon-geometry-transform:translate(-1,-1.5);
-	  		polygon-clip:false;  
-	  		line-width: 0.25;
-	  		line-color: mix(@building, #000, 5);
-	  		line-geometry-transform:translate(-1,-1.5);
-	  		line-clip:false;
-		}
-*/
-	}
+[zoom>=18]{
+  ::wall { polygon-fill:mix(@building, #000, 55); }
+  ::roof {
+  polygon-fill: darken(@building, 30%);
+  polygon-geometry-transform:translate(-1,-1.5);
+  polygon-clip:false;  
+  line-width: 0.5;
+  line-color: mix(@building, #000, 55);
+  line-geometry-transform:translate(-1,-1.5);
+  line-clip:false;
+ }
+}
 }
 
 // ---------------------------------------------------------------------

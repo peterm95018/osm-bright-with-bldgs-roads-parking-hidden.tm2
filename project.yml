@@ -10,9 +10,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -122.0643
-  - 36.9904
-  - 19
+  - -122.0642
+  - 36.9907
+  - 18
 description: This is OSM Bright 2 with integrated data for roads, buildings, hidden_poi, parking_lots, no_brakes to be used in styling.
 format: "png8:m=h"
 interactivity_layer: ''
