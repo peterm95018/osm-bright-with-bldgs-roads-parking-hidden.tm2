@@ -1,0 +1,29 @@
+_prefs: 
+  saveCenter: true
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -122.0615
+  - 36.9992
+  - 18
+description: This is OSM Bright 2 with integrated data for roads, buildings, hidden_poi, parking_lots, no_brakes to be used in styling.
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 10
+name: OSM Bright 2
+source: "mapbox:///mapbox.mapbox-streets-v5,peterm95018.f04d5044"
+styles: 
+  - style.mss
+  - road.mss
+  - labels.mss
+  - parking_lots.mss
+template: ''
