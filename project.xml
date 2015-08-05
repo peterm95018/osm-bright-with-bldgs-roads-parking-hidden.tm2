@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-122.0615,36.9992,18</Parameter>
+  <Parameter name="center">-122.0642,36.991,17</Parameter>
   <Parameter name="description"><![CDATA[This is OSM Bright 2 with integrated data for roads, buildings, hidden_poi, parking_lots, no_brakes to be used in styling.]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
@@ -62,50 +62,6 @@
 <Style name="waterway" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'canal')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#90b4d8" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'canal')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#90b4d8" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'canal')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#90b4d8" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'canal')</Filter>
-    <LineSymbolizer stroke="#90b4d8" stroke-linecap="round" stroke-width="0.5" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <Filter>([class] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#90b4d8" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([class] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#90b4d8" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([class] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#90b4d8" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([class] = 'stream')</Filter>
-    <LineSymbolizer stroke="#90b4d8" stroke-linecap="round" stroke-width="0.5" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([class] = 'stream_intermittent')</Filter>
     <LineSymbolizer stroke-width="3" stroke-dasharray="6, 2, 2, 2" stroke="#90b4d8" stroke-linecap="round" />
   </Rule>
@@ -125,6 +81,50 @@
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([class] = 'stream_intermittent')</Filter>
     <LineSymbolizer stroke-dasharray="6, 2, 2, 2" stroke="#90b4d8" stroke-linecap="round" stroke-width="0.5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#90b4d8" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#90b4d8" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#90b4d8" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'canal')</Filter>
+    <LineSymbolizer stroke="#90b4d8" stroke-linecap="round" stroke-width="0.5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([class] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#90b4d8" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([class] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#90b4d8" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([class] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#90b4d8" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([class] = 'stream')</Filter>
+    <LineSymbolizer stroke="#90b4d8" stroke-linecap="round" stroke-width="0.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -222,20 +222,44 @@
 <Style name="building-roof" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#f0e7df" geometry-transform="translate(-1,-1.5)" clip="false" />
-    <LineSymbolizer stroke-width="0.5" stroke="#d3cfcc" geometry-transform="translate(-1,-1.5)" clip="false" />
+    <PolygonSymbolizer fill="#c08a3a" geometry-transform="translate(-1,-1.5)" clip="false" />
+    <LineSymbolizer stroke-width="0.25" stroke="#0c0b0b" geometry-transform="translate(-1,-1.5)" clip="false" />
   </Rule>
 </Style>
 <Style name="building-wall" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <PolygonSymbolizer fill="#d3cfcc" />
+    <PolygonSymbolizer fill="#e5ddd1" />
   </Rule>
 </Style>
-<Style name="building" filter-mode="first" opacity="0.1">
+<Style name="building" filter-mode="first">
   <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="0.3" stroke="#8f887f" />
+    <PolygonSymbolizer fill="#cea25f" fill-opacity="1" />
+    <BuildingSymbolizer height="1.25" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <PolygonSymbolizer fill="#9f754a" />
+    <PolygonSymbolizer fill="#cea25f" fill-opacity="1" />
+    <LineSymbolizer stroke-width="0.3" stroke="#8f887f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#dab886" fill-opacity="0.6" />
+    <LineSymbolizer stroke-width="0.2" stroke="#8f887f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <PolygonSymbolizer fill="#e6cfad" fill-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <PolygonSymbolizer fill="#f2e6d4" fill-opacity="0.2" />
   </Rule>
 </Style>
 <Layer name="building"
@@ -1873,17 +1897,17 @@
 <Style name="housenum_label" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>750</MaxScaleDenominator>
-    <TextSymbolizer size="12" fontset-name="fontset-1" fill="#ccbbaa" ><![CDATA[[house_num]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fontset-name="fontset-1" fill="#ffffff" ><![CDATA[[house_num]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
-    <TextSymbolizer size="10" fontset-name="fontset-1" fill="#ccbbaa" ><![CDATA[[house_num]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fontset-name="fontset-1" fill="#ffffff" ><![CDATA[[house_num]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
-    <TextSymbolizer fontset-name="fontset-1" fill="#ccbbaa" size="8" ><![CDATA[[house_num]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-1" fill="#ffffff" size="10" ><![CDATA[[house_num]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="housenum_label"

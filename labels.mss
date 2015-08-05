@@ -289,12 +289,13 @@
 
 // ---------------------------------------------------------------------
 // House numbers
+// psm change font size from 8 to 10 10 to 12 and 12 to 14 and fill it white
 
 #housenum_label[zoom>=18] {
   text-name: [house_num];
   text-face-name: @sans_it;
-  text-fill: #cba;
-  text-size: 8;
-  [zoom=19] { text-size: 10; }
-  [zoom>=20] { text-size: 12; }
+  text-fill: #fff;
+  text-size: 10;
+  [zoom=19] { text-size: 12; }
+  [zoom>=20] { text-size: 14; }
 }
