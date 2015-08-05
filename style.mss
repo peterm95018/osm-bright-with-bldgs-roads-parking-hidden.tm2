@@ -172,9 +172,10 @@ Map {
     }
 
 	[zoom>=18] {
-      polygon-fill: darken(@building, 30%);
+      polygon-fill: darken(@building, 40%);
+     // polygon-fill: darken(@building, 30%);
       building-height: 1.25;
-    
+    /*
 		::wall {
 			polygon-fill:mix(@building, #ccc, 65);
 		}
@@ -188,7 +189,7 @@ Map {
 	  		line-geometry-transform:translate(-1,-1.5);
 	  		line-clip:false;
 		}
-
+*/
 	}
 }
 

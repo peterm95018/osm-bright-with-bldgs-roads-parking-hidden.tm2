@@ -291,6 +291,7 @@
 // House numbers
 // psm change font size from 8 to 10 10 to 12 and 12 to 14 and fill it white
 
+
 #housenum_label[zoom>=18] {
   text-name: [house_num];
   text-face-name: @sans_it;
@@ -299,3 +300,17 @@
   [zoom=19] { text-size: 12; }
   [zoom>=20] { text-size: 14; }
 }
+
+/*
+// this works but needs work. Might work better as interactive layer
+#buildings[zoom>=18] {
+  text-name: [name];
+    text-face-name: @sans_it;
+    text-fill: #fff;
+    text-size: 12;
+    text-wrap-width: 100;
+    text-wrap-before: true;
+    text-halo-fill: fadeout(#000, 75%);
+    text-halo-radius: 1.5;
+  }
+*/
