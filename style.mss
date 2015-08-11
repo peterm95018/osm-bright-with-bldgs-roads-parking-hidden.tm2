@@ -12,7 +12,8 @@
 @parking_lots: #F6EDB9;
 @parking_outline: #EFE288;
 @school: #C3AA87;
-@building: #C3AA87;
+@building: #f2e6d4;
+@building-outline: #8f887f;
 
 
 Map {
@@ -117,10 +118,11 @@ Map {
 // ---------------------------------------------------------------------
 // Buildings 
 
+/*
 #building [zoom<=17]{
   // At zoom level 13, only large buildings are included in the
   // vector tiles. At zoom level 14+, all buildings are included.
-  polygon-fill: darken(@land, 50%);
+  polygon-fill: darken(@land, 70%);
   opacity: 0.1;
 }
 // Seperate attachments are used to draw buildings with depth
@@ -136,6 +138,51 @@ Map {
   line-geometry-transform:translate(-1,-1.5);
   line-clip:false;
  }
+}
+*/
+
+// buildings
+// at z14 only largest buildings, opacity .1
+// at z15, we have shapes with no borders
+// at z16 polygons filled 10% darker, opacity .75.
+// at z17 
+// at z18 polygons filled and darker, outlines, opacity at 1.0
+#building {
+  [zoom=14] {
+    polygon-fill: @building;
+    polygon-opacity: .2;
+    }
+  [zoom=15] {
+    polygon-fill: darken(@building, 10%);
+    polygon-opacity: .4
+    }
+	
+	[zoom=16] {
+    polygon-fill: darken(@building, 20%);
+	line-width: .2;
+	line-color: @building-outline;
+	polygon-opacity: .6;
+	}
+  
+    [zoom=17] {
+    polygon-fill: darken(@building, 30%);
+    line-width: .3;
+    line-color: @building-outline;
+    polygon-opacity: 1;
+    }
+
+[zoom>=18]{
+  ::wall { polygon-fill:mix(@building, #000, 55); }
+  ::roof {
+  polygon-fill: darken(@building, 30%);
+  polygon-geometry-transform:translate(-1,-1.5);
+  polygon-clip:false;  
+  line-width: 0.5;
+  line-color: mix(@building, #000, 55);
+  line-geometry-transform:translate(-1,-1.5);
+  line-clip:false;
+ }
+}
 }
 
 // ---------------------------------------------------------------------
