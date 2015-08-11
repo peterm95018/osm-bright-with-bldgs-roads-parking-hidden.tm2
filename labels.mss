@@ -264,8 +264,18 @@
   text-size: 12;
   text-avoid-edges: true;  // prevents clipped labels at tile edges
   [zoom>=15] { text-size: 13; }
+  // hide the bike trail label StarWars
+  [class='path'][name='StarWars'] { 
+    text-halo-radius: 0;
+    text-opacity: 0; 
+  }
 }
 
+// hide No Brakes
+#road_label[name='No Brakes'] {
+  text-opacity: 0;
+  text-halo-opacity: 0;
+  }
 
 // ---------------------------------------------------------------------
 // Water

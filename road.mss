@@ -15,8 +15,18 @@
 // The main road style is for all 3 road layers and divided into 2 main
 // attachments. The 'case' attachment is 
 
-#road, #bridge, #tunnel {
+#roads_high 
+{
+    line-width: 0;
+    }
+ 
   
+#road [osm_id=32919203] {
+      line-width: 0;
+      }
+  
+
+#road, #bridge, #tunnel {
   // casing/outlines & single lines
   ::case[zoom>=6]['mapnik::geometry_type'=2] {
     [class='motorway'] {
@@ -147,4 +157,28 @@
       }
     }
   }
-}
+  // Set StarWars to opacity:0
+  [osm_id=32919203] {
+    ::case {
+  line-width: 0;
+  line-opacity: 0;
+  }
+    ::fill {
+        line-width: 0;
+  line-opacity: 0;
+      }
+    }
+  }
+// hide No Brakes
+#road {
+  [osm_id=46859144] {
+    ::case {
+      line-opacity: 0;
+      line-width: 0;
+      }
+    ::fill {
+      line-opacity: 0;
+      line-width: 0;
+      }
+    }
+  }
