@@ -10,6 +10,7 @@ bounds:
   - 180
   - 85.0511
 center: 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   - -122.0604
   - 36.9892
@@ -17,6 +18,10 @@ center:
 =======
   - -122.0642
   - 36.9907
+=======
+  - -122.0665
+  - 36.9923
+>>>>>>> Stashed changes
   - 18
 >>>>>>> origin/master
 description: This is OSM Bright 2 with integrated data for roads, buildings, hidden_poi, parking_lots, no_brakes to be used in styling.
@@ -26,7 +31,7 @@ layers: null
 maxzoom: 22
 minzoom: 10
 name: OSM Bright 2
-source: "mapbox:///mapbox.mapbox-streets-v5,peterm95018.f04d5044"
+source: "mapbox:///peterm95018.f04d5044,mapbox.mapbox-streets-v5"
 styles: 
   - style.mss
   - road.mss
